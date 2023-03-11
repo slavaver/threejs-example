@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      .threejs {
+        margin: 0 auto;
+        width: 50%;
+        /*aspect-ratio: 1;*/
+        height: 400px;
+      }
+      form {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="threejs"></div>
+    <form>
+      <label
+        ><input type="radio" value="gray" name="color" checked />Серый</label
+      >
+      <label><input type="radio" value="red" name="color" />Красный</label>
+      <label><input type="radio" value="green" name="color" />Зеленый</label>
+      <label><input type="radio" value="blue" name="color" />Синий</label>
+    </form>
+    <script src="three.js"></script>
+    <script src="STLloader.js"></script>
+    <script src="model.js"></script>
+  </body>
+</html>
